@@ -1,0 +1,10 @@
+{
+  "apnoea_start": 0,
+  "bolus_injection": 10,
+  "resp_time": 20,
+  "card_time": 3,
+  "heart_pixel_x": 15,
+  "heart_pixel_y": 20,
+  "lung_pixel_x": 18,
+  "lung_pixel_y": 12
+}
