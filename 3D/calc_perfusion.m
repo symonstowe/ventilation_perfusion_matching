@@ -42,6 +42,8 @@ function imgr_perf = calc_perfusion(imdl,dd,fs)
 	x1 = 1:numel(cropped_data)+numel(lung_pix(resp_duration:end))-1; % Add a tail to keep things smooth
 
 	% Cardiac pixel signal
+%%% DISCUSSION WITH SYMON - 20231116
+%%% card_duration must be larger than bolus_inj
 	cropped_data = heart_pix(bolus_inj:card_duration)'; % pulmonary data first
 	seg_offset = min(cropped_data)*-1; % Get the distance from 0
 	card_sig = cropped_data+seg_offset; % Set the data to an offset of 0
